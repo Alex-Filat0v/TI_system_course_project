@@ -1,0 +1,16 @@
+{
+    "item": [
+        {
+            "id": 1,
+            "indicator": "1.1.1.211",
+            "type": "IPv4",
+            "created": "2028-04-28T17:09:58",
+            "content": "",
+            "title": "",
+            "description": "TEST312",
+            "expiration": null,
+            "is_active": 0,
+            "role": null
+        }
+    ]
+}
