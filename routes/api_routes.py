@@ -78,3 +78,15 @@ def api_upload_json_file():
         return jsonify({"error": "Файл не является валидным JSON."}), 400
     except Exception as e:
         return jsonify({"error": f"Ошибка обработки файла: {str(e)}"}), 500
+
+
+
+@api_blueprint.route("/get_feeds", methods=["POST"])
+def get_feeds():
+    data = request.get_json()
+    search_text = data.get("search_text", "")
+    filter_type = data.get("filter_type", "")
+    print(filter_type)
+    results = db_connector.search_threats(search_text, filter_type)
+
+    return jsonify(results), 201

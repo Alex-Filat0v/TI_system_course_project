@@ -10,9 +10,6 @@ from werkzeug.utils import secure_filename
 user_blueprint = Blueprint('user', __name__)
 db_connector = DataBaseConnector()
 
-# Фиктивный логин/пароль для теста
-USERNAME = "1"
-PASSWORD = "1"
 
 # Директория для загрузки файлов
 UPLOAD_FOLDER = 'uploads'
